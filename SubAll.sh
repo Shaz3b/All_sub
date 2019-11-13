@@ -23,11 +23,10 @@ sublister(){
   rm -rf ~/recon/${DOMAIN} && mkdir ~/recon/${DOMAIN}
   cd ~/extra_tools/Sublist3r/
   python sublist3r.py -d ${DOMAIN} -t 10 -v -o ~/recon/${DOMAIN}/domains.txt > /dev/null
-  echo "sublister done. Output saved in ~/recon/${DOMAIN}/"
 }
 
 crtsh(){
-  echo "${green}starting crtsh and appending all the domain into the domains.txt file."
+  echo "${green}[+]starting crtsh and appending all the domain into the domains.txt file."
   curl -s https://crt.sh/?q=%.${DOMAIN}  | sed 's/<\/\?[^>]\+>//g' | grep ${DOMAIN} >> ~/recon/${DOMAIN}/domains.txt
 }
 
@@ -40,3 +39,5 @@ then
   exit 1
 fi
 
+
+echo "sublister done. Output saved in ~/recon/${DOMAIN}/"
