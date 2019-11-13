@@ -7,8 +7,7 @@
 |____/ \__,_|_.__/_/   \_\_|_|
 
 ```
- SubAll is a tool, which i used to run and collect all the subdomins using Sublister, crtsh and cerspotter.
- It will create one file called domains.txt, which containts all the outputs in one file.
+SubAll is a tool, which I used to run and collect all the subdomains using Sublister, Crtsh, and Certspotter. It will create one file called domains.txt, which contains all the outputs in one file.
 
 ## Usage
  `./SubAll.sh -d target.com`
