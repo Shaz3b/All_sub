@@ -40,4 +40,4 @@ then
 fi
 
 
-echo "sublister done. Output saved in ~/recon/${DOMAIN}/"
+echo "Output saved in ~/recon/${DOMAIN}/"
